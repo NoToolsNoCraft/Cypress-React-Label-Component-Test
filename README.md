@@ -66,13 +66,12 @@ describe("Label component (Cypress)", () => {
 });
 ```
 
-![Screenshot of Label Component](Screenshot%202025-09-27%20123846.png)
+![Screenshot of Label Component](Screenshot%202025-09-27%20142839.png)
 
-| Criteria                  | Justification                                                                                                                                                                                              |
-| :------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Isolation**             | The test isolates the `Label` component by **injecting a custom `getLabel` function**. This removes dependency on external logic and ensures the test verifies only the component’s rendering behavior.    |
-| **Mocking Quality**       | Uses a **controlled stub function (`getLabel`)** to simulate label retrieval, enabling predictable results for known, empty, and unknown cases.                                                            |
-| **Coverage**              | Covers all expected label rendering scenarios: <br>1) Known labels (`greeting`, `farewell`) <br>2) Empty label case (`empty`) <br>3) Unknown label case (`unknown`). Ensures complete behavioral coverage. |
-| **Readability**           | Tests are clearly structured with descriptive names for both test cases and mock data, making them easy to understand and maintain.                                                                        |
-| **Clarity of Assertions** | Assertions clearly check the expected text or empty content in each case, avoiding over-testing and ensuring each case is directly tied to the intended behavior.                                          |
-                                                             
+| Criteria                  | Justification                                                                                                                                                                                                                   |
+| :------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Isolation**             | The test isolates the `CancelOrderButton` component without relying on external dependencies, focusing only on the component’s own rendering and interaction logic.                                                             |
+| **Mocking Quality**       | No external mocking is required here since the component’s behavior is self-contained; Cypress handles UI interaction directly for predictable and repeatable results.                                                          |
+| **Coverage**              | Covers all core interaction scenarios: <br>1) Rendering of the button <br>2) Opening the confirmation dialog <br>3) Closing the dialog via "No" <br>4) Closing the dialog via "Yes". This ensures complete functional coverage. |
+| **Readability**           | Tests are clearly structured with descriptive names for each scenario, making the test suite easy to understand, maintain, and extend.                                                                                          |
+| **Clarity of Assertions** | Each test asserts the intended visible behavior (button presence, dialog visibility, dialog closure), avoiding over-testing while ensuring the component works as expected under each condition.                                |
