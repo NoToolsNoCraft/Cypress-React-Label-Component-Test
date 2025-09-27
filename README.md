@@ -75,4 +75,4 @@ describe("Label component (Cypress)", () => {
 | **Coverage**              | Covers all expected label rendering scenarios: <br>1) Known labels (`greeting`, `farewell`) <br>2) Empty label case (`empty`) <br>3) Unknown label case (`unknown`). Ensures complete behavioral coverage. |
 | **Readability**           | Tests are clearly structured with descriptive names for both test cases and mock data, making them easy to understand and maintain.                                                                        |
 | **Clarity of Assertions** | Assertions clearly check the expected text or empty content in each case, avoiding over-testing and ensuring each case is directly tied to the intended behavior.                                          |
-                                                             |
+                                                             
