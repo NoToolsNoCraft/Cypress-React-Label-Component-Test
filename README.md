@@ -1,6 +1,6 @@
 # Cypress React Label Component Test
 
-This example provides a React LogoutButton component integrated with Auth0 for user logout functionality. A Cypress test ensures the button renders and triggers logout correctly. The button redirects users to the application's origin upon logout.
+This example provides a React Label component integrated with Auth0 for user logout functionality. A Cypress test ensures the button renders and triggers Label correctly. The button redirects users to the application's origin upon logout.
 
 
 ## React Label Component
